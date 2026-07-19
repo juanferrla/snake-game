@@ -24,6 +24,9 @@ Un clásico juego de la serpiente (Snake) implementado en JavaScript puro, HTML 
     - [Hardware](#hardware)
     - [Software](#software)
     - [Fundamentos de Programación con este Stack](#fundamentos-de-programación-con-este-stack)
+  - [Estructura de Especificaciones](#estructura-de-especificaciones)
+    - [Convenciones del Proyecto](#convenciones-del-proyecto)
+    - [Instrucciones Específicas](#instrucciones-específicas)
 
 ## Características
 
@@ -315,3 +318,29 @@ El uso de un modelo de lenguaje local como Qwen3-Coder-Next-UD-Q4_K_XL.gguf perm
 4. **Integración con llama.cpp**: llama.cpp proporciona una implementación eficiente y portable de inferencia para modelos cuantizados, con soporte nativo para múltiples GPUs y optimizaciones específicas para arquitecturas modernas.
 
 Esta arquitectura representa un enfoque moderno y eficiente para el desarrollo de software, combinando el poder de modelos de lenguaje avanzados con la flexibilidad y control de herramientas de desarrollo local.
+
+## Estructura de Especificaciones
+
+Para generar este proyecto, es fundamental estructurar las especificaciones de forma clara y detallada. A continuación, se describe la estructura utilizada:
+
+### Convenciones del Proyecto
+
+Este documento describe las convenciones de estilo, patrones de diseño y reglas generales utilizadas en el desarrollo del juego Snake.
+
+- **Estilo del Código**: JavaScript moderno (ES6+), uso de `const` y `let`, nombres en `camelCase`, comentarios en español para lógica compleja.
+- **Estructura del Código**: Bloques con llaves, indentación de 4 espacios, líneas en blanco para separar secciones lógicas.
+- **Funciones**: Declaración con `function`, nombres descriptivos para parámetros, retorno explícito cuando sea necesario.
+- **Variables**: Globales al inicio del archivo, locales dentro de las funciones.
+- **Patrones del Proyecto**: Game Loop con `setInterval`, estado global y función `initGame()`, renderizado con HTML5 Canvas, manejo de eventos con `keydown`, niveles con objeto `levels`.
+- **Reglas Generales**: Colisiones con paredes y cuerpo, movimiento sin giros de 180 grados, comida en posición aleatoria, interfaz de usuario actualizada, Game Over con reinicio.
+
+### Instrucciones Específicas
+
+Este documento contiene las instrucciones específicas para generar el juego Snake utilizando un modelo de lenguaje local (Qwen3-Coder-Next-UD-Q4_K_XL.gguf) con llama.cpp y aider en modo agentes.
+
+- **Objetivo del Proyecto**: Desarrollar un juego clásico de Snake en JavaScript puro, HTML y CSS, con sistema de niveles, puntuación progresiva y dificultad creciente.
+- **Requisitos Funcionales**: Estructura básica (HTML, CSS, JS), lógica del juego (serpiente, comida, movimiento, colisiones, Game Over), sistema de niveles, interfaz de usuario.
+- **Instrucciones Específicas para el Modelo**: Inicialización, lógica del juego, renderizado, control del juego, niveles, Game Over.
+- **Patrones y Convenciones**: Estilo del código, estructura del código, patrones del proyecto, reglas generales.
+- **Archivos a Generar**: `index.html`, `snake.js`, `README.md`, `CONVENTIONS.md`, `PROMPT.md`, `.gitignore`.
+- **Notas Adicionales**: Privacidad, rendimiento, modo agentes de aider, integración con llama.cpp.
